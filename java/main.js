@@ -1,17 +1,6 @@
 let boxes="";
 
-/* function GenBox(){
-    document.getElementById("container").innerHTML="";
-    let newDiv = document.createElement("div");
-    newDiv.innerHTML=(n)
-    container.append(newDiv);
-    newDiv.classList.add("box-facile");
-    newDiv.addEventListener("click",function(){
-    newDiv.classList.toggle('highlight');
-    })
-}    */
-
-/* clicco la modalita */
+/* scelgo la modalita */
 
 /* facile */
 document.getElementById("facile").addEventListener("click",function(){
@@ -35,7 +24,7 @@ document.getElementById("difficile").addEventListener("click",function(){
 document.getElementById("play").addEventListener("click",function(){
     
     console.log(boxes)
-
+    /* se facile */
     if(boxes==100){
         const container=document.getElementById("container");
         let box=document.querySelector("#container div")
@@ -60,7 +49,7 @@ document.getElementById("play").addEventListener("click",function(){
             })
         }    
     }
-
+    /*se medio  */
     else if(boxes==81){
         const container=document.getElementById("container");
         let box=document.querySelector("#container div")
@@ -87,7 +76,7 @@ document.getElementById("play").addEventListener("click",function(){
         }   
 
     }
-
+    /* se difficile */
     else if(boxes==49){
         const container=document.getElementById("container");
         let box=document.querySelector("#container div")
