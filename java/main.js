@@ -36,10 +36,11 @@ document.getElementById("play").addEventListener("click",function(){
     
     console.log(boxes)
 
-    if(boxes=100){
+    if(boxes==100){
         const container=document.getElementById("container");
         let box=document.querySelector("#container div")
         let newDiv = document.createElement("div");
+        container.innerHTML="";
     
     
         let n = 0    
@@ -60,15 +61,15 @@ document.getElementById("play").addEventListener("click",function(){
         }    
     }
 
-    else if(boxes=81){
+    else if(boxes==81){
         const container=document.getElementById("container");
-        
-        
         let box=document.querySelector("#container div")
         let newDiv = document.createElement("div");
-        
+        container.innerHTML="";
+
         
         boxes=81;
+        let n = 0    
         while(  n < boxes) {
             const numbers=n;
             n++;
@@ -87,15 +88,16 @@ document.getElementById("play").addEventListener("click",function(){
 
     }
 
-    else if(boxes=49){
+    else if(boxes==49){
         const container=document.getElementById("container");
-        boxes=49;
-    
-    
         let box=document.querySelector("#container div")
         let newDiv = document.createElement("div");
-    
-    
+        container.innerHTML="";
+        
+        
+        
+        boxes=49;
+        let n = 0    
         while(  n < boxes) {
             const numbers=n;
             n++;
