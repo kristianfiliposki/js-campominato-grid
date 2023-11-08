@@ -1,34 +1,33 @@
-let boxes;
+let boxes="";
+
+function GenBox(){
+    document.getElementById("container").innerHTML="";
+    let newDiv = document.createElement("div");
+    newDiv.innerHTML=(n)
+    container.append(newDiv);
+    newDiv.classList.add("box-facile");
+    newDiv.addEventListener("click",function(){
+    newDiv.classList.toggle('highlight');
+    })
+}   
 
 /* clicco la modalita */
 
 /* facile */
 document.getElementById("facile").addEventListener("click",function(){
-    
-    console.log(boxes)
     boxes=parseInt(100);
-    let n = 0
-
 })
-
 
 /* medio */
 document.getElementById("medio").addEventListener("click",function(){
-    
-    let n = 0
     boxes=parseInt(81);
     console.log(`ciao le caselle sono ${boxes}`)
-    
-
 })
 
 /* difficile */
 document.getElementById("difficile").addEventListener("click",function(){
-    
     boxes=parseInt(49);
-    console.log(boxes)
-    
-    let n = 0    
+    console.log(boxes) 
 })
 
 
@@ -38,53 +37,49 @@ document.getElementById("play").addEventListener("click",function(){
     console.log(boxes)
 
     if(boxes=100){
-
         const container=document.getElementById("container");
         let box=document.querySelector("#container div")
         let newDiv = document.createElement("div");
     
     
+        let n = 0    
         while(  n < boxes) {
             const numbers=n;
             n++;
-            console.log(n);
-            GenBox(n)
+            GenBox(n);          
         }
-        
+
         function GenBox(){
             let newDiv = document.createElement("div");
-            newDiv.innerHTML=(n)
+            newDiv.innerHTML+=(n)
             container.append(newDiv);
             newDiv.classList.add("box-facile");
             newDiv.addEventListener("click",function(){
             newDiv.classList.toggle('highlight');
             })
-        }   
-
-    
+        }    
     }
 
     else if(boxes=81){
         const container=document.getElementById("container");
-        const boxes=81;
-    
-    
+        
+        
         let box=document.querySelector("#container div")
         let newDiv = document.createElement("div");
-    
-    
+        
+        
+        boxes=81;
         while(  n < boxes) {
             const numbers=n;
             n++;
-            console.log(n);
-            GenBox(n)
+            GenBox(n);
         }
 
         function GenBox(){
             let newDiv = document.createElement("div");
-            newDiv.innerHTML=(n)
+            newDiv.innerHTML+=(n)
             container.append(newDiv);
-            newDiv.classList.add("box-medio");
+            newDiv.classList.add("box-facile");
             newDiv.addEventListener("click",function(){
             newDiv.classList.toggle('highlight');
             })
@@ -94,7 +89,7 @@ document.getElementById("play").addEventListener("click",function(){
 
     else if(boxes=49){
         const container=document.getElementById("container");
-        const boxes=49;
+        boxes=49;
     
     
         let box=document.querySelector("#container div")
@@ -104,15 +99,14 @@ document.getElementById("play").addEventListener("click",function(){
         while(  n < boxes) {
             const numbers=n;
             n++;
-            console.log(n);
             GenBox(n)
         }
 
         function GenBox(){
             let newDiv = document.createElement("div");
-            newDiv.innerHTML=(n)
+            newDiv.innerHTML+=(n)
             container.append(newDiv);
-            newDiv.classList.add("box-difficile");
+            newDiv.classList.add("box-facile");
             newDiv.addEventListener("click",function(){
             newDiv.classList.toggle('highlight');
             })
