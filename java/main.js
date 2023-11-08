@@ -80,7 +80,7 @@ document.getElementById("play").addEventListener("click",function(){
             let newDiv = document.createElement("div");
             newDiv.innerHTML+=(n)
             container.append(newDiv);
-            newDiv.classList.add("box-facile");
+            newDiv.classList.add("box-medio");
             newDiv.addEventListener("click",function(){
             newDiv.classList.toggle('highlight');
             })
@@ -108,7 +108,7 @@ document.getElementById("play").addEventListener("click",function(){
             let newDiv = document.createElement("div");
             newDiv.innerHTML+=(n)
             container.append(newDiv);
-            newDiv.classList.add("box-facile");
+            newDiv.classList.add("box-difficile");
             newDiv.addEventListener("click",function(){
             newDiv.classList.toggle('highlight');
             })
