@@ -34,7 +34,7 @@ color: white;
 .box-facile{width: calc(100% / 10);}
 .box-medio{width: calc(100% / 9);}
 .box-difficile{width: calc(100% / 7);}
-.highlight{background-color: lightgreen}
+.highlight{background-color: rgb(109, 108, 108)}
 
 
 /* .box{
