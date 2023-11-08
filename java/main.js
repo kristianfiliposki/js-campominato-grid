@@ -1,6 +1,6 @@
 let boxes="";
 
-function GenBox(){
+/* function GenBox(){
     document.getElementById("container").innerHTML="";
     let newDiv = document.createElement("div");
     newDiv.innerHTML=(n)
@@ -9,7 +9,7 @@ function GenBox(){
     newDiv.addEventListener("click",function(){
     newDiv.classList.toggle('highlight');
     })
-}   
+}    */
 
 /* clicco la modalita */
 
