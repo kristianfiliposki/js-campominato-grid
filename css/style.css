@@ -1,20 +1,25 @@
+
 header{padding: 10px 30px;}
 
 #container{
     width: 70%;
     margin: auto;
     height: 70vh;
+    background-color: black;
 }
 
 main{
-    margin: 4%;
+    margin: 4% 0%;
+    background-color: gainsboro;
 }
+
 .box{
 width:calc(100% / 10) ;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 1px solid black;
+border: 1px solid white;
+color: white;
 }
 
 
@@ -22,7 +27,8 @@ border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    color: wheat;
+    border: 1px solid  white;
 }
 
 .box-facile{width: calc(100% / 10);}
