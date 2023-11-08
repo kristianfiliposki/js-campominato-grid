@@ -11,6 +11,7 @@ document.getElementById("facile").addEventListener("click",function(){
 
 })
 
+
 /* medio */
 document.getElementById("medio").addEventListener("click",function(){
     
